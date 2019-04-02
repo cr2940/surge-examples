@@ -429,7 +429,9 @@ def setgeo(rundata):
     topo_data.topofiles.append([3, 1, 3, days2seconds(-2), days2seconds(1), os.path.join(topo_path,'atlantic_1min.tt3')])
     topo_data.topofiles.append([3, 1, 3, days2seconds(-2), days2seconds(1), os.path.join(topo_path,'newyork_3s.tt3')])
     # restrict these make max lower and for all time
+    
    # for file in glob.glob("../bathy/*.nc"):
+   # change the file names in bathy or the strings here so that they match, e.g. ncei19_n41x00_w073x25_2015v1.nc = nc41x00_73x25.nc
     topo_data.topofiles.append([4, 1, 6, days2seconds(-0.45),days2seconds(0.46),os.path.join(topo_path,'nc41x00_74x00.nc')])
     topo_data.topofiles.append([4, 1, 6, days2seconds(-0.45),days2seconds(0.46),os.path.join(topo_path,'nc40x75_74x00.nc')])
    
